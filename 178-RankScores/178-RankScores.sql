@@ -1,0 +1,5 @@
+-- Last updated: 7/15/2026, 2:08:41 PM
+# Write your MySQL query statement below
+select score, DENSE_RANK() over (ORDER BY score DESC) as 'rank'
+from Scores
+order by score DESC
