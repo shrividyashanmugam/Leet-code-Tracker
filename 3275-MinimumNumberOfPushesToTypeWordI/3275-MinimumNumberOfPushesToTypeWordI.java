@@ -1,0 +1,11 @@
+// Last updated: 7/31/2026, 10:16:12 AM
+class Solution {
+    public int minimumPushes(String word) {
+        int sum = 0;
+        int n = word.length();
+        for(int i = 0;i<n;i++){
+            sum += (i/8) + 1;
+        }
+    return sum;
+    }
+}
